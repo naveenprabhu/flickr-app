@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "a2e51324-b42c-49fb-b476-de20e46af895",
+		"name": "Monash - Flickr Photo Search",
+		"description": "Monash - Flickr Photo Search",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Photpo by tag",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImpuRFdLaEk2QlJCOGFzazAwZFBzViJ9.eyJpc3MiOiJodHRwczovL2Rldi1jYml6dTR6cXcydmxocXZoLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJ5OVhEbDdKWW1WYVVVNzA4WXdRWUZsc3pkY3BHcmlud0BjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly9hYmJ5bmF2LmNvbSIsImlhdCI6MTY3Mzk1ODgxOCwiZXhwIjoxNjc2NTUwODE4LCJhenAiOiJ5OVhEbDdKWW1WYVVVNzA4WXdRWUZsc3pkY3BHcmludyIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.TJsesZ92K0c-zdq1qlR-pCa4B6fa7yhsnPdQ2Wk6eIR9KlmdLznCWMLMZXBYuMLUwa1mWsSz4Hr-7-uQIlrP-vPxExpU8Gx8kcdl0asyax0yNdOw6BOp8CfvPnb9Jo3hbqUP6dDhxeGJ8h0ISdnA5LzpsHoU2pN_1ET93TDykGJ5XxR3KAzbf_1eS_FcUM4dc5tFTSoxGX88s_v8-OAzgTA-6GKUbQGk86-_kntTO1rLTTf9UnWXJfHuAn3m7q-kl5FkduNSeX6Hh8ibuFkLbCPdlIOdn2Jy8IpOXoDQpjN2F8BakDizvbIPEir25ph85FOQm1Fd6pPcqgh3JxDx2Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-request-id",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "x-correlation-id",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "x-client",
+						"value": "123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3002/v1/photos?searchTag=paris",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"v1",
+						"photos"
+					],
+					"query": [
+						{
+							"key": "searchTag",
+							"value": "paris"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
