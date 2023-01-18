@@ -29,6 +29,9 @@ FLICKR_API_KEY=********** npm run start:dev
 The flickr api key has to be generated.Please see below instruction for creating flickr api key.
 https://www.flickr.com/services/api/misc.api_keys.html
 
+Postman Collection:
+The postman collection is part of the codebase. Import it into postman for testing the api locally.
+
 ### Environment Variables
 
 The following environment variables are not required but can be passed in to run the application:
