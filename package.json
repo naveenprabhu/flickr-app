@@ -13,8 +13,6 @@
     "clearCache": "jest --clearCache",
     "start": "node dist/src/index.js",
     "start:dev": "NODE_ENV=dev ts-node src/index.ts",
-    "debug": "FLICKR_API_KEY=fb84c1cc066088067f2dffa80859e2ca npm run start:dev",
-    "package": "tar czf ${npm_package_name}.tar.gz Dockerfile config dist node_modules proto",
     "prepare": "husky install",
     "commit": "cz"
   },
