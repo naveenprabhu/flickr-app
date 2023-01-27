@@ -41,4 +41,5 @@ jobs:
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             ports: 3002
             name: abbynav-container
+            secure-environment-variables: FLICKR_API_KEY=${{ secrets.FLICKR_API_KEY }}
             location: 'australiaeast'
