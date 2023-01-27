@@ -13,7 +13,6 @@
     "clearCache": "jest --clearCache",
     "start": "node dist/src/index.js",
     "start:dev": "NODE_ENV=dev ts-node src/index.ts",
-    "prepare": "husky install",
     "commit": "cz"
   },
   "author": "Naveen Arumugam",
