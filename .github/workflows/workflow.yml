@@ -13,7 +13,7 @@ jobs:
         - name: 'Setup Node version'
           uses: actions/setup-node@v3
           with:
-            node-version: 19.4.0 
+            node-version: 18.12.0 
           
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
