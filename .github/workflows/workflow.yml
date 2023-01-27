@@ -9,11 +9,6 @@ jobs:
         # checkout the repo
         - name: 'Checkout GitHub Action'
           uses: actions/checkout@master 
-
-        - name: 'Setup Node version'
-          uses: actions/setup-node@v3
-          with:
-            node-version: 18.12.0 
           
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
@@ -35,8 +30,8 @@ jobs:
             resource-group: myResourceGroup
             dns-name-label: abbynav-demo
             image: abbynav.azurecr.io/flickerapp:${{ github.sha }}
-            cpu: 1   #Optional
-            memory: 1.5   #Optional
+            cpu: 1
+            memory: 1.5
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             ports: 3002
