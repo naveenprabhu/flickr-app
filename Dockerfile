@@ -2,6 +2,8 @@
 
 FROM node:18.12.0
 
+RUN npm install -g tsc && npm install -g concurrently && npm install -g typescript
+
 ENV NODE_ENV=production
 
 WORKDIR /app
