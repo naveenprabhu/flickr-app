@@ -39,5 +39,6 @@ jobs:
             memory: 0.1   #Optional
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
+            ports: 3002
             name: abbynav-container
             location: 'australiaeast'
