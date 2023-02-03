@@ -1,4 +1,4 @@
-# flickr-app
+# flickr-app-test
 
 ## Getting Started
 The flickr-app microservice communicates to flickr and retrieves photos, 
